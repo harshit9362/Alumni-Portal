@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="signup.js"></script>
+</head>
+
+    <body>
+        <div class="div1">
+
+            <span  class="navhead" >&nbsp;&nbsp;AMRITA Alumni Association </span>
+            <form >
+            <button class="button" formaction="login.html" value="Login">Login</button>
+            </form>
+        
+    </div>
+
+    <div class="navbar ">
+        <a href="alumni_achievements.html" style="margin-left: 20%;">Acheivements</a>
+        <div class="dropdown">
+            <button class="dropbtn">Alumni
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="index.html">Alumni Search</a>
+              <a href="alumni_spot.html">Spotlight</a>
+            </div>
+          </div>
+        <a href="index1.html">Gallery</a>
+        <div class="dropdown">
+          <button class="dropbtn">Events
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="gokul.html">Gokulashtami</a>
+            <a href="anoka.html">Anokha</a>
+            <a href="amr.html">Amritotsavam</a>
+          </div>
+        </div>
+        <a href="register_session.html">Register Sessions</a>
+        <div class="dropdown">
+          <button class="dropbtn">More
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="feedback.html">Feedback</a>
+          </div>
+        </div>
+      </div>
+
+
+
+        <div class="center" ng-app>
+            <p style="color: #c00c54;">Sign Up</p>
+            <form name="myfoorm" ng-controller onsubmit="return validate()" method="post">
+                <!-- <div class="txt_field">
+                    <input type="text"  name="field1" required>
+                    <label> Choose a Username</label>
+                </div> -->
+                
+                <!-- <div class="txt_field">
+                    <input type="password" name="field3" required >
+                    <label>Retype Password</label>
+                </div> -->
+                <div class="txt_field">
+                    <input type="email" name="field4" required >
+                    <label>Enter email</label>
+                </div>
+                <div class="txt_field">
+                  <input type="password" name="field2" required >
+                  <label>Type Password</label>
+              </div>
+                <div class="txt_field">
+                    <input type="tel" name="field5" required>
+                    <label>Enter mobile number</label>
+                </div>
+                <input type="submit" value="Sign Up"  style="width: 100%;height: 50px;border: 1px solid;background: #c00c54;border-radius: 25px;font-size: 18px;color: #e9f4fb;font-weight: 700;cursor: pointer;outline: none;">
+                </form>
+        </div>
+
+
+    </body>
+</html>

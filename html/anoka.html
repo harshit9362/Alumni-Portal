@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANOKHA</title>
+    <link rel="stylesheet" href="anoka.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js">
+    </script>
+    
+</head>
+
+<body onload="disableSubmit()">
+    <center>
+        <h3 class="hover-3">ANOKHA</h3>
+    </center>
+    <div class="container">
+        <div class="arrow l" onclick="prev()">
+            <img src="l.png" alt="l">
+        </div>
+        <div class="slide slide-1">
+            <div class="caption">
+                <h3></h3>
+            </div>
+        </div>
+        <div class="slide slide-2">
+            <div class="caption">
+                <h3></h3>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="caption">
+                <h3></h3>
+            </div>
+        </div>
+        <div class="slide slide-4">
+            <div class="caption">
+                <h3></h3>
+            </div>
+        </div>
+        <div class="slide slide-5">
+            <div class="caption">
+                <h3></h3>
+            </div>
+        </div>
+        <div class="slide slide-6">
+            <div class="caption">
+                <h3></h3>
+            </div>
+        </div>
+        <div class="arrow r" onclick="next()">
+            <img src="r.png" alt="r">
+        </div>
+
+    </div><br>
+    <div class="flex-container">
+        <div class="flex-item-left"><img
+                src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/bfi_thumb/7005-3-xixq6ks7tdijdh4u0e27eo.jpg">
+        </div>
+        <div class="flex-item-right">The School of Engineering, Amrita Vishwa Vidyapeetham, Coimbatore campus, organized
+            the 10th National-level Techfest, Anokha 2020, from February 13-15, 2020.</div>
+    </div><br>
+
+    <center>
+        <div class="a">
+            <p><span style="font-size: 200%; font-family:cursive;">ABOUT ANOKHA</span></p>
+        </div>
+    </center><br>
+    <center>
+        <div class="b">
+            <p style="padding-top: 10px;padding-left: 20px;font-size: larger;padding-right: 20px;">“Anokha Techfest, the
+                annual event of Amrita School of Engineering, Coimbatore provides an unique opportunity for
+                students to participate in fun-filled and challenging events and workshops. The event throws
+                open opportunities for students from all disciplines to challenge themselves and foster the
+                “Can Do” attitude. One of the key highlights of the Anokha 2020 edition was the Green Anokha
+                concept. It was so wonderful to see the students adopt and implement our Chancellor AMMA’s
+                idea of “Living in Harmony with Nature”. It was plastic-free and eco-friendly Anokha – an
+                initiative that will become a tradition!!”, Dr. Sasangan Ramanathan, Dean, Faculty of
+                Engineering, Amrita Vishwa Vidyapeetham.
+                <span id="dots">...</span><span id="more"><br><br>1)&nbsp;10th edition of the techfest of Amrita School
+                    of Engineering, Amrita Vishwa Vidyapeetham, Coimbatore held from February 13-15, 2020.
+                    <br><br>2)&nbsp;Special event as it is happening on the silver jubilee year of the Amrita Vishwa
+                    Vidyapeetham, Coimbatore campus.
+                    <br><br>3)&nbsp;Tag lines of techfest are “Dare to be Different” and “Bigger, Better & Greener”.
+                    <br><br>4)&nbsp;One of India’s top techfests and first to have United Nations Academic Impact (UNAI)
+                    accreditation.
+                    <br><br>5)&nbsp;Participation by thousands of students all over India.
+                    <br><br>6)&nbsp;Major sponsors of the 2020 edition included Cognizant, Analog Devices, H&R Block,
+                    Infoview, State Bank of India (SBI) and SkillsDA.
+
+                    <br><br>7)&nbsp;50 highly competitive events in all branches of engineering, gaming and robotics.
+                    Popular contests and competitions included Robowarz, Amrita’s version of Battlebots, Death race,
+                    Autonomous robots & Drone challenge, Arduino U know, Hydropowered Rocket, Paper wings, Robosoccer,
+                    King of Concrete and master of circuits.
+                    <br><br>
+                </span>
+            </p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="myFunction()" id="myBtn" class="button">Read
+                more</button><br><br>
+
+        </div>
+    </center><br><br><center>
+    <div ng-app="example">
+    <div ng-controller="basicCntrl">
+        
+        <p><span style="font-size: 200%; font-family:cursive;">WHAT HAPPENS IN ANOKHA ?</span></p>
+        <style>
+            .na{
+                font-family:Arial;
+                font-size: 100%; 
+                align-content: center;
+                width: 75%;
+            }
+            .bt1{
+                background-color: yellow;
+                color: black;
+                border-radius: 2px;
+                padding: 10px 20px;
+                font-family: cursive;
+                font-size: 120%;
+
+            }
+        </style><p class="na">{{name}}</p><p class="na">{{name1}}</p><p class="na">{{name2}}</p><br>
+        <p ng-click="name='So, on DAY 1 eventide will be there. And some tech fest.'">
+            <button class="bt1" type="button">DAY 1</button>
+        </p>
+        <p class="na"
+           ng-click="name1='On Day 2, Ragasudha and Natasudha clubs will perform '">
+            <button class="bt1" type="button">DAY 2</button>
+        </p>
+         <p class="na"
+           ng-click="name2='On Day 3, We will have a guest who is popular and this time Sid Sriram is going to come our college to rock us!'">
+            <button class="bt1" type="button">DAY 3</button>
+        </p>
+ 
+    </div>
+    </div></center>
+    <script type="text/javascript">
+        var app = angular.module('example', []);
+        app.controller('basicCntrl', function($scope) {
+            $scope.name = " ";
+            $scope.name1 = " ";
+            $scope.name2 = " ";
+        });
+    </script>
+    <center>
+        <div class="c1">
+            <p style="color:rgb(255, 217, 0) ; font-size: .2%;">a</p>
+        </div>
+    </center><br><br><br>
+    <center>
+        <div class="c">
+            <p><span style="font-size: 200%; font-family:cursive;">VIDEOS</span></p>
+        </div>
+    </center><br>
+    <div class="flex-container">
+        <div class="fll">
+            <video muted src="day1.mp4" preload="auto" autoplay
+            loop class="h" width="70%">
+
+        </video>
+            <p><span style="font-family:Verdana, Geneva, Tahoma, sans-serif ; font-size:100%; color: rgb(184, 8, 8);">ANOKHA 2020 | Day 1 Highlights</span></p></div>
+        <div class="flr"><video muted src="day2.mp4" preload="auto" autoplay
+                loop class="h" width="70%">
+
+            </video><p><span style="font-family:Verdana, Geneva, Tahoma, sans-serif ; font-size:100%; color: rgb(184, 8, 8);">ANOKHA 2020 | Day 2 Highlights</span></p> </div>
+    </div>
+    <div class="flex-container">
+        <div class="fll"><video muted src="day3.mp4" preload="auto" autoplay
+                loop class="h" width="70%">
+
+            </video><p><span style="font-family:Verdana, Geneva, Tahoma, sans-serif ; font-size:100%; color: rgb(184, 8, 8);">ANOKHA 2020 | Day 3 Highlights</span></p></div>
+        <div class="flr"><video muted src="gre.mp4" preload="auto" autoplay
+                loop class="h" width="70%">
+
+            </video><p><span style="font-family:Verdana, Geneva, Tahoma, sans-serif ; font-size:100%; color: rgb(184, 8, 8);">ANOKHA 2020 | #Greenokha Cycle Rally</span></p> </div>
+    </div><br>
+
+
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+    <script>
+        let slide = document.querySelectorAll('.slide');
+        var current = 0;
+        function cls() {
+            for (let i = 0; i < slide.length; i++) {
+                slide[i].style.display = 'none';
+            }
+        }
+        function next() {
+            cls();
+            if (current === slide.length - 1) current = -1;
+            current++;
+
+            slide[current].style.display = 'block';
+
+            slide[current].style.opacity = 0.4;
+
+            var x = 0.4;
+            var intX = setInterval(function () {
+                x += 0.1;
+                slide[current].style.opacity = x;
+                if (x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+        }
+        function prev() {
+            cls();
+            if (current === 0) current = slide.length;
+            current--;
+
+            slide[current].style.display = 'block';
+
+            slide[current].style.opacity = 0.4;
+
+            var x = 0.4;
+            var intX = setInterval(function () {
+                x += 0.1;
+                slide[current].style.opacity = x;
+                if (x >= 1) {
+                    clearInterval(intX);
+                    x = 0.4;
+                }
+            }, 100);
+        }
+        setInterval(function () {
+            next()
+        }, 3000);
+        window.onload = function () {
+            responsiveSlider();
+        }
+        function start() {
+            cls();
+            slide[current].style.display = 'block';
+
+        }
+        start();
+    </script>
+
+</body>
+
+</html>

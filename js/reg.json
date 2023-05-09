@@ -1,0 +1,26 @@
+{
+  "article": {
+    "para": {
+      "note": [
+        {
+          "remark": "Sign Up"
+        },
+        {
+          "remark": "You have successfully registered for alumni portal"
+        },
+        {
+          "remark": {
+            "#text": "Thankyou for your response.",
+            "br": [
+              "",
+              ""
+            ]
+          }
+        },
+        {
+          "remark": "Go to home page"
+        }
+      ]
+    }
+  }
+}

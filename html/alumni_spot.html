@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="alumni_spot.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">Spotlight of the Month</div>
+        <article class="main">
+          <div class="slideshow-container">
+            <div class="slideshow-inner">
+              <div class="mySlides fade">
+            
+                <img  src='man.png' style='width: 100%;' alt="man1" onclick="change_text(1)"/>
+                <div class="text">Mr Harshith</div>
+              </div>
+            
+              <div class="mySlides fade">
+            
+                <img  src='man.png' style='width: 100%;' alt="man2" onclick="change_text(2)"/>
+                <div class="text">Mr Jawahar</div>
+              </div>
+            
+              <div class="mySlides fade">
+            
+                <img  src='man.png' style='width: 100%;' alt="man3" onclick="change_text(3)"/>
+                <div class="text">Mr Gurudev</div>
+              </div>
+            
+              <div class="mySlides fade">
+            
+                <img  src='man.png' style='width: 100%;' alt="man4" onclick="change_text(4)"/>
+                <div class="text">Mr Sumanth</div>
+              </div>
+              
+              </div>
+            
+            
+              <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+              <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+            </div>
+            
+            
+            
+            <div style='text-align: center;'>
+              <span class="dot" onclick='currentSlide(1)'></span>
+              <span class="dot" onclick='currentSlide(2)'></span>
+              <span class="dot" onclick='currentSlide(3)'></span>
+              <span class="dot" onclick='currentSlide(4)'></span>
+            </div>
+            
+            
+        </article>
+        <div class="aside aside-2">
+          <p id="content" style="padding: 5%;">
+            <span style="font-size: x-large;"><br><br><----- Click Image to display details </span>
+          </p>
+        </div>
+        <footer class="footer">
+          <div class="column"  style="width:48%; ">
+          <blockquote>
+            But that is the way of the place: down our many twisting corridors, one encounters story after story, some heroic, some villainous, some true, some false, some funny, some tragic, and all of them combining to form the mystical, undefinable entity we call the school. Not exactly the building, not exactly the faculty or the students or the alumni - more than all those things but also less, a paradox, an order, a mystery, a monster, an utter joy.          </blockquote>
+          <figcaption>-Sumanth</figcaption>
+          </div>
+          <br>
+          <div class="column" style="width:48%; ">
+            <blockquote>
+              Amrita is a great school scholastically and I enjoyed my time there. It taught me a lot about life and about the future that I am living now. It is an honor to have graduated from there and to be recognized as an alumnus. I didn't finish college, which is really weird because they awarded me the Alumni of Distinction recently.<br><br>           
+            </blockquote>
+              <figcaption>-Harshith</figcaption>
+          </div>
+          <br>
+          <div class="column" style="width:48%;">
+            <blockquote>
+              I focus on faculty, as opposed to facilities, budgets, endowments or students. I do so because I believe, based on many decades of work as a teacher, a scholar and an administrator, that the quality of the faculty determines the quality of the university. Everything else flows from the quality of the faculty. If the faculty are good, you will attract good students and you will have alumni who will raise funds for you.            </blockquote>
+            <figcaption>-Jawahar</figcaption>
+          </div>
+          <br>
+          <div class="column" style="width: 48%;">
+            <blockquote>
+              Perhaps you have heard about the college executives who were discussing what they wanted to do after retirement age. One hoped to run a prison or school of correction so that the alumni would never come back to visit. Another chose to manage an orphan asylum so that he would not be plagued with advice from parents.            </blockquote>
+            <br>
+              <figcaption>-Gurudev</figcaption>
+          </div>                  
+        </footer>
+    </div>
+  </div> 
+  <div class="upload" ng-app = "myApp">
+    <div ng-controller = "myCtrl">
+      <h3>Upload your own details:</h3>
+      <input type = "file" file-model = "myFile"/>
+      <button ng-click = "uploadFile()">Upload</button>
+   </div>
+  </div>
+<script>
+    var slideIndex = 1;
+
+    var myTimer;
+
+    var slideshowContainer;
+
+    window.addEventListener("load",function() {
+        showSlides(slideIndex);
+        myTimer = setInterval(function(){plusSlides(1)}, 4000);
+      
+        //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+        slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+      
+        //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+        //slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+      
+        slideshowContainer.addEventListener('mouseenter', pause)
+        slideshowContainer.addEventListener('mouseleave', resume)
+    })
+
+    // NEXT AND PREVIOUS CONTROL
+    function plusSlides(n){
+      clearInterval(myTimer);
+      if (n < 0){
+        showSlides(slideIndex -= 1);
+      } else {
+      showSlides(slideIndex += 1); 
+      }
+      
+      //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+      if (n === -1){
+        myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+      } else {
+        myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+      }
+    }
+    //Controls the current slide and resets interval if needed
+    function currentSlide(n){
+      clearInterval(myTimer);
+      myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n){
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    pause = () => {
+      clearInterval(myTimer);
+    }
+
+    resume = () =>{
+      clearInterval(myTimer);
+      myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+    }
+    
+    function change_text(n){
+      const content=[];
+      content[0]="Harshith is an experienced payments industry professional who leads the Global Payment Device Design Innovation function for Visa Inc.  In his current role, Harshith is responsible for advancing new payment form factors aimed at driving business growth while elevating the customer experience through design.  Core to his professional passions, he also serves as a project consultant for financial institutions across the globe to ensure product objectives are brought to life through the creation and execution of impactful design solutions. </br></br></br>&nbsp;Harshith has held a number of regional and global positions at Visa, including Brand Management and Card Design Services, covering disciplines such as: brand identity, naming, card features, card technologies, and design innovations.";
+      content[1]="Service is in the nature of Jawahar Reddy, president and CEO of Northern Star Industries in Iron Mountain. He has served with Friends of Handicapped People, theInterlochen Arts Academy Presidents Council, the Dickinson-Area Catholic School Board, and the Iron Mountain- Kingsford Rotary Club. Additionally, he has served onthe board of directors of the First National Bank of Iron Mountain and as director ofthe UP Construction Labor- Management Council.Jawahar earned a bachelor’s degree in electrical engineering from Michigan Tech in 1972. </br></br></br>He began his career while still at Tech in 1971 as a division engineer with Wisconsin Public Service in Green Bay. He joined M. J. Electric in 1973 as a project engineer, working up to his appointment as president and CEO in 1991. He continued as president of the company after it was acquired by Exelon Infrastructure Services in 2000. He was inducted into the ECE Academy in 1996.";
+      content[2]="Gurudev, '77 Joyce graduated from Michigan Tech in 1977 with a bachelor’s degree in Business ‘Administration-Industral Management. She began her career at American Can ‘and moved on to Kaiser Aluminum & Chemical Corporation in Spokane, WA. </br></br></br>In 1981, she was the foreman of the company's Trentwood Works Division. She then accepted a position with Kimberly-Clark Corporation where she remains today. During her 22 years with K:C she has held various manufacturing positions with Infant Care, Tisues, Adult Care, Wet Wipes, Non-wovers, and Technical Paper Seidinnibes: Shite sedi ie her MNP nciciens aban his Donan";
+      content[3]="Sumanth received his BS degree in Applied Physics from Michigan Tech in 1/1962. He earned an MS degree in 1963 and a PAD in 1966 from Purdue University in Industrial Administration. In 1966, he joined the Systems Analysis Group in the Office ofthe Secretary of Defense at the Pentagon. Since 1970, he has been a professor in the Carlson School of Management atthe University of Minnesota. </br></br></br>He has served as the chairman of Minnesota's internationally recognized Information and Decision Sciences Department since 1983. From 1995 to 1996, he was elected and served as chairman of the University of Minnesota Faculty Commitee";
+    document.getElementById("content").innerHTML = content[n-1];
+  }
+
+  var myApp = angular.module('myApp', []);
+         
+         myApp.directive('fileModel', ['$parse', function ($parse) {
+            return {
+               restrict: 'A',
+               link: function(scope, element, attrs) {
+                  var model = $parse(attrs.fileModel);
+                  var modelSetter = model.assign;
+                  
+                  element.bind('change', function() {
+                     scope.$apply(function() {
+                        modelSetter(scope, element[0].files[0]);
+                     });
+                  });
+               }
+            };
+         }]);
+         myApp.controller('myCtrl', ['$scope', 'fileUpload', function($scope, fileUpload) {
+            $scope.uploadFile = function() {
+               
+               var file = $scope.myFile;
+               console.log('file is ' );
+               console.dir(file);
+               var uploadUrl = "/fileUpload";
+               fileUpload.uploadFileToUrl(file, uploadUrl);
+            };
+         }]);
+</script>
+</body>
+</html>

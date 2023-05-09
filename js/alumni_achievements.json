@@ -1,0 +1,675 @@
+{
+  "@lang": "en",
+  "@version": "5.0",
+  "info": {
+    "title": "Document"
+  },
+  "para": [
+    "Alumni Achievements",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "S No."
+      }
+    },
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "Name"
+      }
+    },
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "College/University"
+      }
+    },
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "Course"
+      }
+    },
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "1."
+      }
+    },
+    "Kritika Sudan",
+    "Leibniz Institute For Neurobiology Magdeburg. Germany.",
+    "Phd.",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "2."
+      }
+    },
+    "Madhav Sharma",
+    "Carlton University, Canada",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "3."
+      }
+    },
+    "Om Naulakha",
+    "Birla Institute of Technology & Science, PILANI",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "4."
+      }
+    },
+    "Rahul Sarna",
+    "Stony Brook University, New York",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "5."
+      }
+    },
+    "Dhruv Singhal",
+    "Stony Brook University, New York",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "6."
+      }
+    },
+    "Udit Verma",
+    "IIIT, Dwarka",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "7."
+      }
+    },
+    "Harsh Singh",
+    "Delhi College of Engineering",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "8."
+      }
+    },
+    "Dhruv Aggarwal",
+    "JJM Medical College, Devangiri, Bangalore",
+    "MBBS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "9."
+      }
+    },
+    "Ankit Parasher",
+    "University College of Medical Sciences , New Delhi",
+    "MBBS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "10."
+      }
+    },
+    "Pooja Mishra",
+    "Kasturba Gandhi Medical College, Manipal University",
+    "MBBS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "11."
+      }
+    },
+    "Jaikaran Mansingh",
+    "Manipal University",
+    "MBBS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "12."
+      }
+    },
+    "Kunal Bhutani",
+    "Shri Ram College of Commerce",
+    "B.Com (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "13."
+      }
+    },
+    "Mansi Kabra",
+    "Shri Ram College of Commerce",
+    "Eco (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "14."
+      }
+    },
+    "Sneha Goyal",
+    "Lady Shri Ram College",
+    "Psychology (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "15."
+      }
+    },
+    "Shubhi Kapoor",
+    "Lady Shri Ram College",
+    "History (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "16."
+      }
+    },
+    "Heena Bajaj",
+    "Lady Shri Ram College",
+    "B.Com (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "17."
+      }
+    },
+    "Jyoti Wadhwa",
+    "Shaheed Sukhdev College of Business Studies (CBS), DU",
+    "BBS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "18."
+      }
+    },
+    "Garima Sehra",
+    "Shaheed Sukhdev College of Business Studies (CBS), DU",
+    "BBS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "19."
+      }
+    },
+    "Shivya Gupta",
+    "Shaheed Sukhdev College of Business Studies (CBS), DU",
+    "BBS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "20."
+      }
+    },
+    "Tripta Ahuja",
+    "Shaheed Sukhdev College of Business Studies (CBS), DU",
+    "BBS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "21."
+      }
+    },
+    "Tanmeet Singh",
+    "Hindu College",
+    "Political Science (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "22."
+      }
+    },
+    "Kriti Talwar",
+    "Hindu College",
+    "Mathematics (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "23."
+      }
+    },
+    "Palakh Duggar",
+    "Hindu College",
+    "Physics (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "24."
+      }
+    },
+    "Vrendha Manni",
+    "Hansraj College",
+    "Computer Science (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "25."
+      }
+    },
+    "Anuj Bajaj",
+    "Sri Venkateswara",
+    "Mathematics (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "26."
+      }
+    },
+    "Komal Naulakha",
+    "Sri Venkateswara",
+    "Eco (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "27."
+      }
+    },
+    "Vasudha Grover",
+    "Jesus and Mary College Delhi University",
+    "B.com Hons.",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "28."
+      }
+    },
+    "Sahiba Ahluwalia",
+    "Jesus and Mary College Delhi University",
+    "Psychology (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "29."
+      }
+    },
+    "Tania Kapoor",
+    "Jesus and Mary College Delhi University",
+    "Psychology (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "30."
+      }
+    },
+    "Sasha Samuel",
+    "St Stephens College",
+    "History (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "31."
+      }
+    },
+    "Ashna Sethi",
+    "University of Leeds",
+    "B.A (Hons) in Media",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "32."
+      }
+    },
+    "Shivam Mehta",
+    "Hansraj College",
+    "B.Com (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "33."
+      }
+    },
+    "Chandni Airi",
+    "Faculty of Arts,DU",
+    "French (Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "34."
+      }
+    },
+    "Sania Bhatia",
+    "JMC, D.U.",
+    "B.Com(Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "35."
+      }
+    },
+    "Gurmani Chadha",
+    "SRCC, D.U.",
+    "B.Com(Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "36."
+      }
+    },
+    "Shikhar Gupta",
+    "Narsee Monjee",
+    "BBA",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "37."
+      }
+    },
+    "Abhinav Jain",
+    "SRCC, D.U.",
+    "B.Com(Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "38."
+      }
+    },
+    "Prabhleen Kaur",
+    "JMC, D.U.",
+    "B.Com(Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "39."
+      }
+    },
+    "Akanksha Khullar",
+    "JMC, D.U.",
+    "Political Science(Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "40."
+      }
+    },
+    "Jayita Mehdi",
+    "Shaheed Bhagat Singh, D.U",
+    "B.Com(Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "41."
+      }
+    },
+    "Nazar Nandi Nagpal",
+    "Kamla Nehu College",
+    "B.Com(Pass)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "42."
+      }
+    },
+    "Dhananjit Ray",
+    "Shaheed Bhagat Singh College",
+    "Eco(Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "43."
+      }
+    },
+    "Hardik Wadhwa",
+    "SRCC, D.U",
+    "Eco(Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "44."
+      }
+    },
+    "Ritika Nowlakha",
+    "JMC, D.U.",
+    "Psychology(Hons)",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "45."
+      }
+    },
+    "Lady Hardinge Medical College, Delhi University.",
+    "MBBS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "46."
+      }
+    },
+    "Maharaja Agrasen Institute of Technology, Indraprastha University,\n    Delhi.",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "47."
+      }
+    },
+    "Harish Bohara",
+    "IIT, Guwahati",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "48."
+      }
+    },
+    "Antil Singhal",
+    "Neta Ji Subhash Institute of Technology, Delhi",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "49."
+      }
+    },
+    "Yug Agarwal",
+    "School of Planning and Architecture, Bhopal",
+    "B.Arch",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "50."
+      }
+    },
+    "Siddharta Sen",
+    "SRCC",
+    "Phy. Hons.",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "51."
+      }
+    },
+    "Maneet Singh",
+    "DTU Delhi",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "52."
+      }
+    },
+    "Daksh Narang",
+    "NSIT Delhi",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "53."
+      }
+    },
+    "Nakul Chadha",
+    "Manipal Institute",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "54."
+      }
+    },
+    "Sahil Sarna",
+    "Stony Brook University",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "55."
+      }
+    },
+    "Utkarsh Grover",
+    "Purdue University U.S.",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "56."
+      }
+    },
+    "Ishaan Sharma",
+    "I.P University",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "57."
+      }
+    },
+    "Ansh Kumar",
+    "Univ.Collage of Arch. I.P.",
+    "B.Arch",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "58."
+      }
+    },
+    "Arsh Aggarwal",
+    "SRCC",
+    "Economics Hons.",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "59."
+      }
+    },
+    "Parul Arora",
+    "SRCC",
+    "Economics Hons",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "60."
+      }
+    },
+    "Anubha Saggar",
+    "Shaheed Sukhdev College of Business Studies",
+    "BBS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "61."
+      }
+    },
+    "Lakshika Sharma",
+    "Lady Shri Ram College",
+    "Maths Hons.",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "62."
+      }
+    },
+    "Tushita Jolly",
+    "Miranda House",
+    "English Hons.",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "63."
+      }
+    },
+    "Sehaj Monga",
+    "Lady Shri Ram College",
+    "Psychology Hons.",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "64."
+      }
+    },
+    "Ahan Ghosh",
+    "St. Xaviers College, Calcutta",
+    "Mass Media & Videography",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "65."
+      }
+    },
+    "Anisha Kaur Sethi",
+    "DY Patil Medical College, Mumbai",
+    "Medicine",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "66."
+      }
+    },
+    "Smriti Mehra",
+    "University of Melbourne",
+    "Bachelor’s degree in Economics",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "67."
+      }
+    },
+    "Ojasvi Jain",
+    "Shaheed Sukhdev College of Business Studies, Delhi University",
+    "BMS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "68."
+      }
+    },
+    "Mahima Batheja",
+    "Shaheed Sukhdev College of Business Studies, Delhi University",
+    "BMS",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "69."
+      }
+    },
+    "Ayushman Dey",
+    "Manipal University",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "70."
+      }
+    },
+    "Pritha Ray",
+    "Narsee Monjee, Mumbai",
+    "B.Tech",
+    {
+      "emphasis": {
+        "@role": "strong",
+        "#text": "71."
+      }
+    },
+    "Astha kalra",
+    "Indira Gandhi Delhi technical University",
+    "B.Arch"
+  ],
+  "literallayout": [
+    "Anubhuti Chaturvedi\n(2010-2011)",
+    "Aarushi Chaturvedi\n(2011-2012)"
+  ]
+}

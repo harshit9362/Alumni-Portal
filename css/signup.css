@@ -1,0 +1,204 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url(login.jpg);
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #c00c54;
+    font-size: 150%;
+  }
+
+  .navbar a {
+    float: left;
+
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+
+  }
+
+  .dropdown .dropbtn {
+    font-size: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+.div1{
+    
+    background: #c00c54;
+    height: 8%;
+    width: 100%;
+}
+
+
+
+.button {
+    background-color: #c00c54; 
+    color: #EFF5F5;
+    padding: 1px 3px 1px 3px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1%;
+    margin-right: 1%;
+    border: #EFF5F5;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: right;
+  }
+
+  .button1 {
+    background-color: #c00c54; 
+    color: #EFF5F5;
+    padding: 1px 3px 1px 3px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 1%;
+    border: #EFF5F5;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: right;
+  }
+
+
+.button:hover, .button1:hover{
+    border: 1px solid black;
+    color: red;
+    cursor: pointer;
+}
+
+.navhead{
+    position: absolute;
+    background: #c00c54;
+    color: #EFF5F5;
+    font-size: 28px;
+    padding-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.center
+{
+    position: absolute;
+    top: 57.5%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 50px;
+    border: 1px solid green;
+    opacity: 0.85;
+    margin-left: -20%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    height: 80%;
+}
+.center p
+{
+    text-align: center;
+    font-size: x-large;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid grey;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field
+{
+    position: relative ;
+    border-bottom: 2px solid grey;
+    margin: 30px 0;
+}
+.txt_field input
+{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.txt_field label
+{
+    position: absolute;
+    top:50%;
+    left: 5px;
+    color: grey;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt_field span::before
+{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #c00c54;
+    transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label
+{
+    top: -5px;
+    color: #c00c54;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before
+{
+    width: 100%;
+}
+input[type="submit"]:hover
+{
+    border-color: #c00c54;
+    transition: .5s;
+    padding-bottom: 2%;
+}

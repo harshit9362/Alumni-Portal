@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="example366">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        .lead { font-size: 1.5rem; font-weight: 300; }
+.container { margin: 50px auto 0 auto; max-width: 960px; }
+</style>
+
+    <link rel="stylesheet" href="./style1.css">
+    <!-- add styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+    <!-- add javascripts -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.0rc1/angular.js"></script>
+    <script src="http://code.angularjs.org/1.2.0rc1/angular-animate.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.0rc1/angular-touch.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    
+
+    <section id="gallery">
+        <div class="container">
+
+
+            <ul class="gallery_tabs">
+                <li class="active" data-filter="all">All</li>
+                <li data-filter="Gokulastami">Gokulastami</li>
+                <li data-filter="Amritotsavam">Amritotsavam</li>
+                <li data-filter="Anokha">Anokha</li>
+                <li data-filter="Onam">Onam</li>
+            </ul>
+
+            <div ng-controller="MainCtrl">
+            
+            
+                <!-- slider container -->
+                <div class="container slider">
+            
+                    <!-- enumerate all photos -->
+                    <img ng-repeat="photo in photos" class="slide" ng-swipe-right="showPrev()" ng-swipe-left="showNext()"
+                        ng-show="isActive($index)" ng-src="{{photo.src}}" />
+            
+                    <!-- prev / next controls -->
+                    <a class="arrow prev" href="#" ng-click="showPrev()"></a>
+                    <a class="arrow next" href="#" ng-click="showNext()"></a>
+            
+                    <!-- extra navigation controls -->
+                    <ul class="nav">
+                        <li ng-repeat="photo in photos" ng-class="{'active':isActive($index)}">
+                            <img src="{{photo.src}}" alt="{{photo.desc}}" title="{{photo.desc}}" ng-click="showPhoto($index);" />
+                        </li>
+                    </ul>
+            
+                </div>
+            </div>
+
+            <div class="gallery_wrapper">
+                <div class="gallery_item Gokulastami">
+                    <img src="images/a1.webp"
+                        alt="img">
+                </div>
+                <div class="gallery_item Gokulastami">
+                    <img src="images/a2.webp" alt="img">
+                </div>
+                <div class="gallery_item Gokulastami">
+                    <img src="images/a3.webp" alt="img">
+                </div>
+                <div class="gallery_item Gokulastami">
+                    <img src="images/a4.webp" alt="img">
+                </div>
+                <div class="gallery_item Gokulastami">
+                    <img src="images/a5.webp" alt="img">
+                </div>
+                <div class="gallery_item Gokulastami">
+                    <img src="images/a6.webp" alt="img">
+                </div>
+                <div class="gallery_item Gokulastami">
+                    <img src="images/a7.webp" alt="img">
+                </div>
+                <div class="gallery_item Gokulastami">
+                    <img src="images/a8.webp" alt="img">
+                </div>
+
+                <div class="gallery_item Onam">
+                    <img src="images/o1.webp"
+                        alt="img">
+                </div>
+                <div class="gallery_item Onam">
+                    <img src="images/o2.webp" alt="img">
+                </div>
+                <div class="gallery_item Onam">
+                    <img src="images/o3.webp" alt="img">
+                </div>
+                <div class="gallery_item Onam">
+                    <img src="images/o4.webp" alt="img">
+                </div>
+                <div class="gallery_item Onam">
+                    <img src="images/o5.webp" alt="img">
+                </div>
+
+
+                <div class="gallery_item Amritotsavam">
+                    <img src="images/am1.webp"
+                        alt="img">
+                </div>
+                <div class="gallery_item Amritotsavam">
+                    <img src="images/am1.webp" alt="img">
+                </div>
+                <div class="gallery_item Amritotsavam">
+                    <img src="images/am2.webp" alt="img">
+                </div>
+                <div class="gallery_item Amritotsavam">
+                    <img src="images/am3.webp" alt="img">
+                </div>
+                <div class="gallery_item Amritotsavam">
+                    <img src="images/am4.webp" alt="img">
+                </div>
+
+
+                <div class="gallery_item Anokha">
+                    <img src="images/an1.jpg"
+                        alt="img">
+                </div>
+                <div class="gallery_item Anokha">
+                    <img src="images/an2.jpg" alt="img">
+                </div>
+                <div class="gallery_item Anokha">
+                    <img src="images/an3.jpg" alt="img">
+                </div>
+                <div class="gallery_item Anokha">
+                    <img src="images/an4.jpg" alt="img">
+                </div>
+                <div class="gallery_item Anokha">
+                    <img src="images/an5.jpg" alt="img">
+                </div>
+                <div class="gallery_item Anokha">
+                    <img src="images/an6.jpg" alt="img">
+                </div>
+                <div class="gallery_item Anokha">
+                    <img src="images/an7.jpg" alt="img">
+                </div>
+                <div class="gallery_item Anokha">
+                    <img src="images/an8.jpg" alt="img">
+                </div>
+                <div class="gallery_item Anokha">
+                    <img src="images/an9.jpg" alt="img">
+                </div>
+                <div class="gallery_item Anokha">
+                    <img src="images/an10.jpg" alt="img">
+                </div>
+            </div>
+
+         
+            <div class="lightbox">
+                <div class="lightbox_wrapper">
+                    <div class="lightbox_content">
+                        <img src="" class="lightbox_img" alt="lightbox-img">
+                    </div>
+                </div>
+                <div class="lightbox_close">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./main.js"></script>
+</body>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LLWL5N9CSM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-LLWL5N9CSM');
+</script>
+</html>

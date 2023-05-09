@@ -1,0 +1,86 @@
+.body
+{
+    margin: 0px;
+
+}
+
+
+.a{
+ 
+}
+
+
+
+a
+{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+a :visited 
+{
+  color: inherit;  
+}
+
+.d 
+{
+    margin-top: -7%;
+    margin-left: 50%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 100%;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    background-color: whitesmoke;
+    padding: 10px;
+    flex: 30%;
+  }
+
+
+  
+  .flex-item-right {
+    background-color: whitesmoke;
+    padding: 10px;
+    flex: 70%;
+    font-family: cursive;
+
+  }
+  .fc{
+   
+        display: flex;
+        flex-direction: row;
+        font-size: 100%;
+        text-align: center;
+      
+  }
+  .fc1{
+    background-color: whitesmoke;
+    padding: 3px;
+    flex: 100%;
+    font-family: cursive;
+    flex-direction: column;
+  }
+  .fc2{
+    background-color: whitesmoke;
+    padding: 2px;
+    flex: 50%;
+    font-family: cursive;
+    flex-direction: column;
+  }
+  .fc3{
+    background-color: whitesmoke;
+    padding: 2px;
+    flex: 50%;
+    font-family: cursive;
+    flex-direction: column;
+  }
+  

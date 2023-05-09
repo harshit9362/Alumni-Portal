@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Submit Your Feedback</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="feedback.css">
+    </head>
+
+    <script type = "text/javascript">
+        //Form validation
+        function validate() 
+        {
+             var emailID = document.ratingForm.TxtEmail.value;
+             atpos = emailID.indexOf("@");
+             dotpos = emailID.lastIndexOf(".");
+             
+             if (atpos < 1 || ( dotpos - atpos < 2 )) 
+             {
+                alert("Please enter correct email ID")
+                document.ratingForm.TxtEmail.focus() ;
+                return false;
+             }
+             if(document.ratingForm.phoneno.value == "" || isNaN( document.ratingForm.phoneno.value ) ||
+                 document.ratingForm.phoneno.value.length != 10)
+                 {
+                 
+                 alert( "Please enter a valid mobile number.");
+                 document.ratingForm.phoneno.focus() ;
+                 return false;
+                 }
+            }
+
+            var count = 0;
+ 
+            function result(){
+	document.write("Thanks for your feedback!")
+}
+ 
+function startRating(item){
+	count=item.id[0];
+	sessionStorage.star = count;
+	for(var i=0;i<5;i++){
+		if(i < count){
+			document.getElementById((i+1)).style.color="orange";
+		}
+		else{
+			document.getElementById((i+1)).style.color="black";
+		}
+	}
+}
+
+
+         </script>  
+
+
+
+
+
+    
+    <body>
+        <div class="container feedback-form">
+            <div class="feedback-image">
+                <img src="amrita.png" alt="Logo" width="500px" height="100px">
+            </div>
+            <form method="POST" name="ratingForm" onsubmit="return(validate())">
+                <h3>Drop Us A Feedback</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="phoneno" placeholder="Mobile">
+                        </div>
+                        <div class="form-group">
+                            <p>Did You Get Your Answer?</p>
+                            Yes<input type="radio" name="1">
+                            No<input type="radio" name="1">                            
+                        </div>
+                        <textarea name="txtMsg" class="form-control" placeholder="Your Message Or Suggestions" style="width: 600px;height: 150px;margin-bottom: 8px;"></textarea>
+                        <div class="form-group">
+                            <input type="submit" name="btnsubmit" class="btnfeedback" value="Send Feedback" style="outline: none;">                        
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" name="TxtEmail" class="form-control" placeholder="Email">  
+                            <p>Are you satisfied with our services?</p>    
+                            Yes<input type="radio" name="2">                      
+                            No<input type="radio" name="2">
+                        </div>
+                        <div class="form-group" name="rating" onclick="startRating(item)">
+                            <p>Give Your Rating Out Of 5</p>
+                            <div class="col-md-6 col" style="width:70%; margin-top: -4%;">
+
+                
+                                <span id="1" style="font-size:35px; cursor:pointer;"  class="fa fa-star" onclick="startRating(this)" onmouseover="startRating(this)" startRating="starmark(this)" >★</span>
+                
+                                <span id="2"  style="font-size:35px; cursor:pointer;" class="fa fa-star" onclick="startRating(this)" onmouseover="startRating(this)" startRating="starmark(this)">★</span>
+                
+                                <span id="3"  style="font-size:35px; cursor:pointer;" class="fa fa-star" onclick="startRating(this)" onmouseover="startRating(this)" startRating="starmark(this)">★</span>
+                
+                                <span id="4"  style="font-size:35px; cursor:pointer;" class="fa fa-star" onclick="startRating(this)" onmouseover="startRating(this)" startRating="starmark(this)">★</span>
+                
+                                <span id="5"  style="font-size:35px; cursor:pointer;" class="fa fa-star" onclick="startRating(this)" onmouseover="startRating(this)" startRating="starmark(this)">★</span>
+                
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

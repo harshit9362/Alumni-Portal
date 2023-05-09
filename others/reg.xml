@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE article SYSTEM "reg.xsd">
+<article lang="">
+  <para>
+    <note>
+      <remark class="c">Sign Up</remark>
+    </note>
+    <note>
+      <remark>You have successfully registered for alumni portal</remark>
+    </note>
+    <note>
+      <remark><br />Thankyou for your response. <br /></remark>
+    </note>
+
+    <note>
+      <remark >
+        Go to home page
+      </remark>
+    </note>
+  </para>
+</article>

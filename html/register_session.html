@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>@import "~ngx-easy-table/style.scss";</style>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="register_session.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body ng-app="mymodal">
+    <div ng-controller="MainCtrl">
+<div class="flex-container">
+    <div class="ongoing">
+        <h1 style="font-size: 200%;">Ongoing Sessions</h1>
+    </div>
+    <div class="ongoing_items">
+        <div class="sessions">
+            <h5>"DJ Reddy Talks!" by Mr. Jawahar Reddy</h5>
+            <p>Amriteshwari Hall, 6pm</p>
+            <button ng-click="toggleModal()" class="button">Click Me</button>
+        </div>
+
+        <div class="sessions">
+            <h5>"Hello Amrita!" by Mr. Jawahar Reddy</h5>
+            <p>Amriteshwari Hall, 6pm</p>
+            <button ng-click="toggleModal()" class="button">Click Me</button>
+        </div>
+
+        <div class="sessions">
+            <h5>"Hello Amrita!" talk by Mr. Sathwik Rupes</h5>
+            <p>Amriteshwari Hall, 6pm</p>
+            <button ng-click="toggleModal()" class="button">Click Me</button>
+        </div>
+
+        <div class="sessions">
+            <h5>"Hello Amrita!" talk by Mr. Sathwik Rupes</h5>
+            <p>Amriteshwari Hall, 6pm</p>
+            <button ng-click="toggleModal()" class="button">Click Me</button>
+        </div>
+    </div>
+</div>
+
+<div class="flex-container1">
+    <div class="upcoming_items">
+        <div class="sessions">
+            <h5>"DJ Reddy Talks!" by Mr. Jawahar Reddy</h5>
+            <p>Amriteshwari Hall, 6pm</p>
+            <button ng-click="toggleModal()" class="button">Click Me</button>
+        </div>
+
+        <div class="sessions">
+            <h5>"Hello Amrita!" by Mr. Jawahar Reddy</h5>
+            <p>Amriteshwari Hall, 6pm</p>
+            <button ng-click="toggleModal()" class="button">Click Me</button>
+        </div>
+
+        <div class="sessions">
+            <h5>"Hello Amrita!" talk by Mr. Sathwik Rupes</h5>
+            <p>Amriteshwari Hall, 6pm</p>
+            <button ng-click="toggleModal()" ng-click="toggleModal()" class="button">Click Me</button>
+        </div>
+
+        <div class="sessions">
+            <h5>"Hello Amrita!" talk by Mr. Sathwik Rupes</h5>
+            <p>Amriteshwari Hall, 6pm</p>
+            <button ng-click="toggleModal()" class="button">Click Me</button>
+        </div>
+    </div>
+    <div class="upcoming">
+        <h1 style="font-size: 200%;">Upcoming Sessions</h1>
+    </div>
+</div>
+<modal title="Message" visible="showModal">
+    <form role="form">
+      <div class="form-group">
+        <p style="font-weight: bold;">Thanks for resgistering to this session.</p>
+        <br>
+        <p>Enter email for further updates</p>
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" />
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </modal>
+    </div>
+<script>
+    var mymodal = angular.module('mymodal', []);
+
+mymodal.controller('MainCtrl', function ($scope) {
+    $scope.showModal = false;
+    $scope.toggleModal = function(){
+        $scope.showModal = !$scope.showModal;
+    };
+  });
+
+mymodal.directive('modal', function () {
+    return {
+      template: '<div class="modal fade">' + 
+          '<div class="modal-dialog">' + 
+            '<div class="modal-content">' + 
+              '<div class="modal-header">' + 
+                '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>' + 
+                '<h4 class="modal-title">{{ title }}</h4>' + 
+              '</div>' + 
+              '<div class="modal-body" ng-transclude></div>' + 
+            '</div>' + 
+          '</div>' + 
+        '</div>',
+      restrict: 'E',
+      transclude: true,
+      replace:true,
+      scope:true,
+      link: function postLink(scope, element, attrs) {
+        scope.title = attrs.title;
+
+        scope.$watch(attrs.visible, function(value){
+          if(value == true)
+            $(element).modal('show');
+          else
+            $(element).modal('hide');
+        });
+
+        $(element).on('shown.bs.modal', function(){
+          scope.$apply(function(){
+            scope.$parent[attrs.visible] = true;
+          });
+        });
+
+        $(element).on('hidden.bs.modal', function(){
+          scope.$apply(function(){
+            scope.$parent[attrs.visible] = false;
+          });
+        });
+      }
+    };
+  });
+</script>
+</body>
+</html>
